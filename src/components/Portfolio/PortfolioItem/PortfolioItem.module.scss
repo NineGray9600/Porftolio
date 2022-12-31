@@ -1,0 +1,23 @@
+@import "src/scss";
+
+  .portfolioItem {
+    display: flex;
+    margin-bottom: 30px;
+    .portfolioWrap {
+      position: relative;
+      overflow: hidden;
+      width: 100%;
+      height: 100%;
+
+      .portfolioImg {
+        width: 416px;
+        height: 312px;
+      }
+
+    }
+
+    }
+
+
+
+

@@ -1,0 +1,53 @@
+@import "src/scss";
+
+
+
+.container {
+
+  > ul {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    margin-left: 20px;
+    margin-top: 30px;
+
+    .link {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      color: $gray500;
+      cursor: pointer;
+      margin-left: -30px;
+      margin-top: 3px;
+      &:hover {
+        color: white;
+        > svg {
+          fill: $blue500;
+        }
+        transition: 0.4s;
+      }
+
+      > svg {
+        display: block;
+        width: 23px;
+        height: 23px;
+        fill: #a8a9b4;
+        margin-right: -7px;
+
+      }
+      > span {
+      text-transform: capitalize;
+        color: #a8a9b4;
+      }
+    }
+    .active {
+      @extend .link;
+      > svg {
+        fill:$blue500;
+      }
+      > span {
+        color: white;
+      }
+    }
+  }
+}

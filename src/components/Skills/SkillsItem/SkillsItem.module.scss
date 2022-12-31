@@ -1,0 +1,33 @@
+@import "src/scss";
+
+
+.progress {
+  height: 60px;
+  background: none;
+  border-radius: 0;
+
+  .skill {
+    padding: 0;
+    margin: 0 0 6px 0;
+    text-transform: uppercase;
+    display: block;
+    font-weight: 600;
+    font-family: "Poppins", sans-serif;
+    color: #050d18;
+
+    .val {
+      float: right;
+      font-style: normal;
+    }
+  }
+
+  .progressBarWrap {
+    background: #dce8f8;
+    height: 10px;
+  }
+  .progressBar {
+    background: #dce8f8;
+    height: 10px;
+    color: blue;
+  }
+}

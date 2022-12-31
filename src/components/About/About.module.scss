@@ -1,0 +1,83 @@
+@import "src/scss";
+
+
+.about {
+  background: white;
+  .container {
+    max-width: 1300px;
+    h2::after {
+      @include after;
+    }
+    p {
+      @include paragraph;
+    }
+
+    .row {
+      display: flex;
+      margin-top: 15px;
+
+      .rowImage {
+        display: block;
+
+        > img {
+          width: 416px;
+          height: 416px;
+        }
+      }
+
+      .rowContent {
+        margin-left: 15px;
+        > h3 {
+          font-family: 'Raleway', sans-serif;
+          font-size: 26px;
+          color: #173b6c;
+          font-weight: 700;
+          line-height: 32px;
+        }
+
+        > p {
+          font-family: 'Open Sans', sans-serif;
+          font-size: 16px;
+          line-height: 24px;
+          font-style: italic;
+        }
+
+        .rowInfo {
+            > ul {
+              display: grid;
+              grid-template-columns: repeat(2,1fr);
+              grid-column-gap: 5px;
+              li {
+                margin-top: 25px;
+                margin-bottom: 15px;
+                margin-right: 50px;
+                font-size: 15px;
+
+                strong {
+                  margin-right: 5px;
+                }
+              }
+            }
+
+
+          .info {
+            font-family: 'Open Sans', sans-serif;
+            font-size: 16px;
+            font-style: normal;
+          }
+        }
+      }
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
+
+

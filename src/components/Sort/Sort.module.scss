@@ -1,0 +1,32 @@
+.rowContent {
+  display: flex;
+  justify-content: center;
+  .portfolioFilters {
+    display: flex;
+    justify-content: center;
+    width: 30%;
+    padding: 0;
+    margin: 0 auto 35px auto;
+    list-style: none;
+    text-align: center;
+    background: #f5f8fd;
+    border-radius: 50px;
+    padding: 2px 15px;
+    li {
+      cursor: pointer;
+      display: inline-block;
+      padding: 10px 15px 8px 15px;
+      font-size: 14px;
+      font-weight: 600;
+      line-height: 1;
+      text-transform: uppercase;
+      color: #272829;
+      margin-bottom: 5px;
+      transition: all 0.3s ease-in-out;
+    }
+    .active {
+        color: #41b3e8;
+    }
+  }
+
+}

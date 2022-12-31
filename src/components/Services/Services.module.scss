@@ -1,0 +1,45 @@
+@import "src/scss";
+
+.services {
+
+  .container {
+    max-width: 1300px;
+    .sectionTitle {
+      margin-bottom: 20px;
+      > h2 {
+        font-size: 32px;
+        font-weight: bold;
+        margin-bottom: 20px;
+        padding-bottom: 20px;
+        position: relative;
+        color: #173b6c;
+
+        &::after {
+          content: "";
+          position: absolute;
+          display: block;
+          width: 50px;
+          height: 3px;
+          background: #149ddd;
+          bottom: 0;
+          left: 0;
+        }
+      }
+
+      p {
+
+        font-size: 16px;
+      }
+
+    }
+    .row {
+      width: 1320px;
+      height: 290px;
+      display: grid;
+      grid-template-columns: repeat(3, 440px);
+      grid-template-rows: repeat(2, 120px);
+      margin-right: -12px;
+      margin-left: -12px;
+    }
+  }
+}

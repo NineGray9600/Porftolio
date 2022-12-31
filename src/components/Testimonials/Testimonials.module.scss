@@ -1,0 +1,18 @@
+@import "src/scss";
+
+
+.testimonials {
+  background: #f5f8fd;
+  .container {
+    max-width: 1300px;
+    h2::after {
+      @include after;
+    }
+    p {
+      @include paragraph;
+    }
+  }
+}
+
+
+

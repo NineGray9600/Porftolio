@@ -1,0 +1,37 @@
+@import "src/scss";
+
+
+.wrapper {
+  display: grid;
+  grid-template-columns: 3px 1fr;
+  grid-template-rows: 90px;
+  align-items: start;
+
+  .iconWrapper {
+    display: flex;
+    font-size: 20px;
+    position: relative;
+    width: 44px;
+    height: 44px;
+    background: #dff3fc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    transition: background .2s ease-in;
+    svg {
+      width: 20px;
+      height: 20px;
+      fill: #149ddd;
+      transition: fill .2s ease-in;
+    }
+  }
+  .iconWrapper:hover {
+    background: #149ddd;
+    svg:hover {
+      fill: white;
+    }
+  }
+
+
+}

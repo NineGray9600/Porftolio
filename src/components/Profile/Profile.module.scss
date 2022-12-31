@@ -1,0 +1,67 @@
+@import "src/scss";
+
+.profile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 15px;
+  gap: 20px;
+  .profilePhotoWrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    background-color: $gray700;
+
+    .profileImg {
+     display: block;
+      width: 105px;
+      height: 105px;
+      border-radius: 50%;
+    }
+
+  }
+  > h1 {
+    color: $white;
+    font-size: 24px;
+    font-weight: 600;
+    text-align: center;
+  }
+  .icons {
+    display: flex;
+    gap: 8px;
+    cursor: pointer;
+
+    margin-right: 30px;
+
+
+    transition: 0.3s;
+
+  .socialWrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #212431;
+    border-radius: 50%;
+
+    width: 36px;
+    height: 36px;
+    transition: .3s ease;
+    &:hover {
+      background-color: $blue700;
+      transition: .3s ease;
+      box-shadow:  7px 7px 23px #504a4b,
+      -7px -7px 23px $blue700;
+    }
+    .socialIcon {
+      fill: $white;
+      display: block;
+      width: 18px;
+      height: 18px;
+      padding: 2px 2px;
+    }
+  }
+  }
+}

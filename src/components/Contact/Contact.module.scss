@@ -1,0 +1,121 @@
+@import "src/scss";
+
+
+.contact {
+  padding-bottom: 130px;
+  height: 955px;
+  .container {
+    max-width: 1300px;
+    height: 765px;
+       h2::after {
+          @include after;
+        }
+      }
+      p {
+        @include paragraph;
+      }
+    }
+    .row {
+      display: grid;
+      grid-template-columns: 530px 740px;
+      grid-template-rows: 608px;
+      grid-column-gap: 25px;
+      margin-top: 30px;
+      .rowWrapperMap {
+        display: flex;
+        align-items: stretch;
+        .info {
+          padding: 30px;
+          background: #fff;
+          width: 100%;
+          box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.12);
+          i {
+            font-size: 20px;
+            color: #149ddd;
+            float: left;
+            width: 44px;
+            height: 44px;
+            background: #dff3fc;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 50px;
+            transition: all 0.3s ease-in-out;
+          }
+          h4 {
+            padding: 0 0 0 60px;
+            font-size: 22px;
+            font-weight: 600;
+            margin-bottom: 5px;
+            color: #050d18;
+          }
+          p {
+            padding: 0 0 10px 60px;
+            margin-bottom: 20px;
+            font-size: 14px;
+            color: #173b6c;
+          }
+          .email {
+            padding-top: 5px;
+          }
+        }
+      }
+      .rowWrapperForm {
+        display: flex;
+        align-items: stretch;
+        .form {
+          width: 100%;
+          padding: 30px;
+          background: #fff;
+          box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.12);
+          .formWrapper {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+
+          }
+          label {
+            padding-bottom: 8px;
+          }
+          input,textarea {
+            border-radius: 0;
+            box-shadow: none;
+            font-size: 14px;
+          }
+          input {
+            height: 44px;
+          }
+          textarea {
+            padding: 10px 15px;
+          }
+          .formGroup {
+            display: flex;
+            flex-direction: column;
+            padding-top: 15px;
+            input {
+              border: 1px solid lightgray;
+              margin-right: 20px;
+            }
+            textarea {
+              border: 1px solid lightgray;
+            }
+          }
+        }
+        .buttonWrapper {
+          display: flex;
+          justify-content: center;
+          margin-top: 20px;
+          button {
+            background: #149ddd;
+            border: 0;
+            padding: 10px 24px;
+            color: #fff;
+            transition: 0.4s;
+            border-radius: 4px;
+            &:hover {
+              background: #41b3e8;
+            }
+          }
+
+        }
+      }
+    }
