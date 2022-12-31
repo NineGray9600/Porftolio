@@ -1,30 +1,6 @@
 import React from 'react';
 import styled from './Resume.module.scss';
 
-interface IData {}
-
-interface IResume {
-  id: number;
-  title: string;
-  user: string;
-  desc: string;
-  address: string;
-  phone: string;
-  email: string;
-}
-
-const dataResume: IResume[] = [
-  {
-    id: 1,
-    title: 'Summary',
-    user: 'ALEX SMITH',
-    desc: 'Innovative and deadline-driven Graphic Designer with 3+ years of experience designing and developing user-centered digital/print marketing material from initial concept to final, polished deliverable.',
-    address: 'Portland par 127,Orlando, FL',
-    phone: '(123) 456-7891',
-    email: 'alice.barkley@example.com',
-  },
-];
-
 export const Resume = () => {
   return (
     <section id={'resume'}>
