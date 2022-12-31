@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from './Skills.module.scss';
-import SkillsItem from './SkillsItem/SkillsItem';
+import { SkillsItem } from './SkillsItem/SkillsItem';
 
 const dataSkills = {
   title: 'Skills',
@@ -15,7 +15,7 @@ const dataSkills = {
   ],
 };
 
-const Skills = () => {
+export const Skills = () => {
   return (
     <section className={styled.skills}>
       <div className={styled.container}>
@@ -35,5 +35,3 @@ const Skills = () => {
     </section>
   );
 };
-
-export default Skills;

@@ -7,7 +7,7 @@ interface IProp {
   onClickSort: (value: string) => void;
 }
 
-const Sort: React.FC<IProp> = ({ onClickSort }: any) => {
+export const Sort: React.FC<IProp> = ({ onClickSort }: any) => {
   const [currentSort, setCurrentSort] = useState<string>('All');
 
   const handleSort = (item: string) => {
@@ -33,5 +33,3 @@ const Sort: React.FC<IProp> = ({ onClickSort }: any) => {
     </div>
   );
 };
-
-export default Sort;

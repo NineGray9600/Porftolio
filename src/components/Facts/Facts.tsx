@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from './Facts.module.scss';
-import FactsItem from './Fact/FactsItem';
+import { FactsItem } from './Fact/FactsItem';
 
 const factsData = {
   title: 'Facts',
@@ -37,7 +37,7 @@ const factsData = {
   ],
 };
 
-const Facts = () => {
+export const Facts = () => {
   return (
     <section>
       <div className={styled.container}>
@@ -54,5 +54,3 @@ const Facts = () => {
     </section>
   );
 };
-
-export default Facts;

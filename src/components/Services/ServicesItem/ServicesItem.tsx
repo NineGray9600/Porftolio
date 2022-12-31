@@ -9,7 +9,7 @@ interface IProps {
   icon: string;
 }
 
-const ServicesItem: React.FC<IProps> = ({ title, desc, icon }) => {
+export const ServicesItem: React.FC<IProps> = ({ title, desc, icon }) => {
   return (
     <div className={styled.serviceItem} data-aos={'fade-up'}>
       <div className={styled.icon}>
@@ -26,5 +26,3 @@ const ServicesItem: React.FC<IProps> = ({ title, desc, icon }) => {
     </div>
   );
 };
-
-export default ServicesItem;

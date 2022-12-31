@@ -5,7 +5,7 @@ import { profile } from 'assets/images/hero';
 
 const links = ['skype', 'instagram', 'linkedin', 'telegram', 'twitter'];
 
-const Profile = () => {
+export const Profile = () => {
   return (
     <div className={styled.profile}>
       <div className={styled.profilePhotoWrapper}>
@@ -30,5 +30,3 @@ const Profile = () => {
     </div>
   );
 };
-
-export default Profile;

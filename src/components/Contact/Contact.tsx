@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from './Contact.module.scss';
-import ContactInfo from './ContactInfo/ContactInfo';
+import { ContactInfo } from './ContactInfo/ContactInfo';
 
 const contactInfoData = [
   {
@@ -12,7 +12,7 @@ const contactInfoData = [
   { svg: 'geo', title: 'Call:', info: '+1 5589 55488 55s' },
 ];
 
-const Contact = () => {
+export const Contact = () => {
   return (
     <section id={'contact'} className={styled.contact}>
       <div className={styled.container}>
@@ -98,5 +98,3 @@ const Contact = () => {
     </section>
   );
 };
-
-export default Contact;

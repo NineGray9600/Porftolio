@@ -1,9 +1,9 @@
 import React from 'react';
-import Profile from '../Profile/Profile';
-import Navbar from '../Navbar/Navbar';
+import { Profile } from '../Profile/Profile';
+import { Navbar } from '../Navbar/Navbar';
 import styled from './Header.module.scss';
 
-const Header = () => {
+export const Header = () => {
   return (
     <header className={styled.header}>
       <Profile />
@@ -11,5 +11,3 @@ const Header = () => {
     </header>
   );
 };
-
-export default Header;

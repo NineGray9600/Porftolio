@@ -8,7 +8,7 @@ interface IProp {
   info: string;
 }
 
-const ContactInfo: React.FC<IProp> = ({ svg, title, info }) => {
+export const ContactInfo: React.FC<IProp> = ({ svg, title, info }) => {
   return (
     <div className={styled.wrapper}>
       <div className={styled.iconWrapper}>
@@ -23,5 +23,3 @@ const ContactInfo: React.FC<IProp> = ({ svg, title, info }) => {
     </div>
   );
 };
-
-export default ContactInfo;

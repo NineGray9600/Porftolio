@@ -2,7 +2,7 @@ import React from 'react';
 import styled from './Hero.module.scss';
 import Typewritter from 'typewriter-effect';
 
-const Hero = () => {
+export const Hero = () => {
   return (
     <div id={'home'} className={styled.hero}>
       <div className={styled.container}>
@@ -28,5 +28,3 @@ const Hero = () => {
     </div>
   );
 };
-
-export default Hero;

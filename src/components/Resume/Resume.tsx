@@ -25,7 +25,7 @@ const dataResume: IResume[] = [
   },
 ];
 
-const Resume = () => {
+export const Resume = () => {
   return (
     <section id={'resume'}>
       <div className={styled.container}>
@@ -148,5 +148,3 @@ const Resume = () => {
     </section>
   );
 };
-
-export default Resume;

@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from '../Resume.module.scss';
 
-const ResumeItem = () => {
+export const ResumeItem = () => {
   return (
     <>
       <h3 className={styled.resumeTitle}>Sumary</h3>
@@ -51,5 +51,3 @@ const ResumeItem = () => {
     </>
   );
 };
-
-export default ResumeItem;

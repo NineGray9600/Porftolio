@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from './Services.module.scss';
-import ServicesItem from './ServicesItem/ServicesItem';
+import { ServicesItem } from './ServicesItem/ServicesItem';
 
 interface IData {
   id: number;
@@ -60,7 +60,7 @@ const servicesData: IServices = {
   ],
 };
 
-const Services: React.FC = () => {
+export const Services: React.FC = () => {
   return (
     <section id={'services'} className={styled.services}>
       <div className={styled.container}>
@@ -78,5 +78,3 @@ const Services: React.FC = () => {
     </section>
   );
 };
-
-export default Services;

@@ -8,7 +8,7 @@ interface IProp {
   count: number;
 }
 
-const SkillsItem: React.FC<IProp> = ({ skill, progress, count }) => {
+export const SkillsItem: React.FC<IProp> = ({ skill, progress, count }) => {
   return (
     <div className={styled.progress}>
       <span className={styled.skill}>
@@ -18,5 +18,3 @@ const SkillsItem: React.FC<IProp> = ({ skill, progress, count }) => {
     </div>
   );
 };
-
-export default SkillsItem;

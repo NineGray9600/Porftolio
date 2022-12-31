@@ -1,6 +1,5 @@
 import React from 'react';
 import styled from './PortfolioItem.module.scss';
-import Link from 'react-router-dom';
 
 interface IProps {
   id: number;
@@ -8,7 +7,7 @@ interface IProps {
   category: string;
 }
 
-const PortfolioItem: React.FC<IProps> = ({ id, img, category }) => {
+export const PortfolioItem: React.FC<IProps> = ({ id, img, category }) => {
   return (
     <div className={styled.portfolioItem}>
       <div className={styled.portfolioWrap}>
@@ -30,5 +29,3 @@ const PortfolioItem: React.FC<IProps> = ({ id, img, category }) => {
     </div>
   );
 };
-
-export default PortfolioItem;

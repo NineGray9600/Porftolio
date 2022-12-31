@@ -1,7 +1,7 @@
 import React, { FC } from 'react';
 import styled from './About.module.scss';
 import { profile } from 'assets/images/hero';
-import AboutItem from './AboutItem/AboutItem';
+import { AboutItem } from './AboutItem/AboutItem';
 
 const userData = {
   position: 'UI/UX Designer & Web Developer',
@@ -25,7 +25,7 @@ const text = {
   text: 'Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex  aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia  fugiat sit in iste officiis commodi quidem hic quas.',
 };
 
-const About: React.FC = () => {
+export const About: React.FC = () => {
   return (
     <section id={'about'} className={styled.about}>
       <div className={styled.container}>
@@ -63,5 +63,3 @@ const About: React.FC = () => {
     </section>
   );
 };
-
-export default About;

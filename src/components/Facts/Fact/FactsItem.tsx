@@ -11,7 +11,7 @@ interface IProps {
   delay: string;
 }
 
-const FactsItem: React.FC<IProps> = ({
+export const FactsItem: React.FC<IProps> = ({
   svg,
   count,
   text,
@@ -41,5 +41,3 @@ const FactsItem: React.FC<IProps> = ({
     </>
   );
 };
-
-export default FactsItem;

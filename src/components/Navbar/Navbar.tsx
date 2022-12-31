@@ -3,7 +3,7 @@ import styled from './Navbar.module.scss';
 import sprite from 'assets/sprite.svg';
 import { Link } from 'react-scroll';
 
-const Navbar: React.FC = () => {
+export const Navbar: React.FC = () => {
   const [activeLink, setActiveLink] = useState<number>();
 
   const navigation = [
@@ -44,5 +44,3 @@ const Navbar: React.FC = () => {
     </nav>
   );
 };
-
-export default Navbar;

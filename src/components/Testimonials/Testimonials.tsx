@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from './Testimonials.module.scss';
-import TestimonialItem from './TestimonialItem/TestimonialItem';
+import { TestimonialItem } from './TestimonialItem/TestimonialItem';
 import Slider from 'react-slick';
 import { Pagination, Navigation } from 'swiper';
 import { Swiper, SwiperSlide } from 'swiper/react';
@@ -71,7 +71,7 @@ const testimonialsData: ITestimonials = {
     },
   ],
 };
-const Testimonials = () => {
+export const Testimonials = () => {
   return (
     <section className={styled.testimonials}>
       <div className={styled.container}>
@@ -104,5 +104,3 @@ const Testimonials = () => {
     </section>
   );
 };
-
-export default Testimonials;

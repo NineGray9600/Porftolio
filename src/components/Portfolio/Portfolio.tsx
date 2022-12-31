@@ -1,7 +1,7 @@
 import React, { memo, useState } from 'react';
 import styled from './Portfolio.module.scss';
-import Sort from '../Sort/Sort';
-import PortfolioItem from './PortfolioItem/PortfolioItem';
+import { Sort } from '../Sort/Sort';
+import { PortfolioItem } from './PortfolioItem/PortfolioItem';
 import {
   portImg1,
   portImg2,

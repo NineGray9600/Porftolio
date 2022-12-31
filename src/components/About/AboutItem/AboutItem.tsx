@@ -6,7 +6,7 @@ interface IProp {
   text: string;
 }
 
-const AboutItem: React.FC<IProp> = ({ title, text }) => {
+export const AboutItem: React.FC<IProp> = ({ title, text }) => {
   return (
     <>
       <li>
@@ -17,5 +17,3 @@ const AboutItem: React.FC<IProp> = ({ title, text }) => {
     </>
   );
 };
-
-export default AboutItem;

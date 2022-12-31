@@ -9,7 +9,12 @@ interface IProp {
   desc: string;
 }
 
-const TestimonialItem: React.FC<IProp> = ({ image, name, position, desc }) => {
+export const TestimonialItem: React.FC<IProp> = ({
+  image,
+  name,
+  position,
+  desc,
+}) => {
   return (
     <div className={styled.testimonialItem} data-aos="fade-up">
       <p>
@@ -24,5 +29,3 @@ const TestimonialItem: React.FC<IProp> = ({ image, name, position, desc }) => {
     </div>
   );
 };
-
-export default TestimonialItem;
